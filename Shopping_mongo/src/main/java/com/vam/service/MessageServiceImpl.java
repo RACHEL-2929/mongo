@@ -5,8 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.vam.mapper.ChatRepository;
 import com.vam.model.MessageVO;
+import com.vam.repository.ChatRepository;
 
 @Service
 public class MessageServiceImpl implements MessageService{

@@ -1,4 +1,4 @@
-package com.vam.mapper;
+package com.vam.repository;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 

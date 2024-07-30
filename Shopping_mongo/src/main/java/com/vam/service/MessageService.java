@@ -11,5 +11,6 @@ public interface MessageService {
 	public MessageVO getMessageOne(String id);
 	public void deleteMessageById(String id);
 	
+	
 
 }

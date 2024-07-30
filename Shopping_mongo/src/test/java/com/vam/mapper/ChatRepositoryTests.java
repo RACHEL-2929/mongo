@@ -1,6 +1,7 @@
 package com.vam.mapper;
 
 import java.util.Date;
+import java.util.List;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -20,17 +21,36 @@ public class ChatRepositoryTests {
 	
 
 	
-	@Test
-	public void createMessage() {
-		MessageVO message = new MessageVO();
-		
-		message.setMessageNo("1");
-		message.setContent("메시지 전달내용을 적었습니다.");
-		message.setTimeStamp(new Date());
-		message.setType("text");
-		
-		
-		messageService.createMessage(message);
-	}
+	
+	
+	  @Test public void createMessage() { MessageVO message = new MessageVO();
+	  
+	  message.setMessageNo("1"); message.setContent("메시지 전달내용을 적었습니다.");
+	  message.setTimeStamp(new Date()); message.setType("text");
+	  
+	  
+	  messageService.createMessage(message); }
+	 
+	 
+	
+	
+	/*
+	 * @Test public void getAllMessage() { List<MessageVO> list =
+	 * messageService.getAllMessage(); for (int i = 0; i < list.size(); i++) {
+	 * System.out.println(list.get(i)); } }
+	 */
+	 
+	
+	
+	/*
+	 * @Test public void getMessageOne() { String id = "1";
+	 * System.out.println(messageService.getMessageOne(id)); }
+	 */
+	
+	/*
+	 * @Test public void deleteMessageById() { String id = "1";
+	 * messageService.deleteMessageById(id); }
+	 */
+	 
 
 }
