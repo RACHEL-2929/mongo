@@ -25,11 +25,11 @@ public class ChatRepositoryTests {
 	
 	  @Test public void createMessage() { MessageVO message = new MessageVO();
 	  
-	  message.setMessageNo("1"); message.setContent("메시지 전달내용을 적었습니다.");
+	  message.setMessageNo("3"); message.setContent("메시지 전달내용을 적었습니다.");
 	  message.setTimeStamp(new Date()); message.setType("text");
 	  
 	  
-	  messageService.createMessage(message); }
+	  messageService.createMessage(message);}
 	 
 	 
 	

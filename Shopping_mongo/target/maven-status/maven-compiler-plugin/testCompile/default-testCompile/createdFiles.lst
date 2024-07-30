@@ -1,0 +1,6 @@
+com\vam\mapper\AuthorMapperTests.class
+com\vam\mapper\MemberMapperTests.class
+com\vam\persistence\JDBCTest.class
+com\vam\mapper\AdminMapperTests.class
+com\vam\mapper\ChatRepositoryTests.class
+com\vam\persistence\DataSourceTest.class

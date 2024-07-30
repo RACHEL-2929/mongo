@@ -14,6 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.vam.model.MessageVO;
 import com.vam.service.MessageService;
 
+
+
+
 @RestController
 @RequestMapping("/message")
 public class MessageController {

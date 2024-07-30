@@ -1,7 +1,10 @@
 package com.vam.mapper;
 
+import org.springframework.stereotype.Repository;
+
 import com.vam.model.MemberVO;
 
+@Repository
 public interface MemberMapper {
 
 	public void memberJoin(MemberVO member);

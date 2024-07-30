@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="0" name="com.vam.persistence.DataSourceTest" time="0.014" errors="1" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.23+7-LTS-222"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\mongo\Shopping_mongo"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="KR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\mongo\Shopping_mongo"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="11.0.23+7-LTS-222"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\user\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="classworlds.conf" value="C:\spring_shopping\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf9581863505378638513.tmp"/>
+    <property name="jansi.force" value="true"/>
+    <property name="sun.jnu.encoding" value="MS949"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\app\user\product\21c\dbhomeXE\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\System32\OpenSSH\;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C;\Program Files\Java\jdk-14.0.2\bin;C:\Program Files\Java\jdk-17\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\ePapyrus\SDPlugin\addins;C:\Users\user\Desktop\songpa_project\language\nvm;C:\Users\user\Desktop\songpa_project\language;C:\Program Files\nodejs\;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Bandizip\;C:\Program Files\MongoDB\Server\5.0\bin;C:\Users\user\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\user\AppData\Local\Programs\Python\Python38\;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\System32\OpenSSH\;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Users\user\Desktop\학업\jdk-13_windows-x64_bin\jdk-13\bin;C;\Program Files\Java\jdk-14.0.2\bin;C:\Program Files\Java\jdk-15.0.2\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\ePapyrus\SDPlugin\;C:\Users\user\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="jansi.passthrough" value="true"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\user"/>
+    <property name="user.timezone" value="Asia/Seoul"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="user"/>
+    <property name="java.class.path" value="C:\sts-3.9.17.RELEASE\plugins\org.eclipse.m2e.maven.runtime_1.18.0.20210603-1206\jars\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install -Dstyle.color=always"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11"/>
+    <property name="user.language" value="ko"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.23"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.maintenance.version" value="2"/>
+    <property name="maven.home" value="C:\mongo\Shopping_mongo\EMBEDDED"/>
+    <property name="style.color" value="always"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.vam.persistence.DataSourceTest" name="testConnection" time="0.014">
+    <error message="Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name &apos;messageServiceImpl&apos; defined in file [C:\mongo\Shopping_mongo\target\classes\com\vam\service\MessageServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type &apos;com.vam.repository.ChatRepository&apos; available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:127)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	... 31 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type &apos;com.vam.repository.ChatRepository&apos; available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1790)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 49 more
+</error>
+    <system-err>[main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6a78afa0, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2f4948e4, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1f2586d6, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@10683d9d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3fc2959f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5aa9e4eb, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6989da5e, org.springframework.test.context.event.EventPublishingTestExecutionListener@385c9627]
+[main] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[main] INFO jdbc.connection - 1. Connection opened
+[main] INFO jdbc.audit - 1. Connection.new Connection returned 
+[main] INFO jdbc.audit - 1. Connection.getNetworkTimeout() returned 0
+[main] INFO jdbc.audit - 1. Connection.isReadOnly() returned false
+[main] INFO jdbc.audit - 1. Connection.getAutoCommit() returned true
+[main] INFO jdbc.audit - 1. Connection.isValid(1) returned true
+[main] INFO jdbc.audit - 1. Connection.getTransactionIsolation() returned 2
+[main] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[HikariPool-1 connection adder] INFO jdbc.connection - 2. Connection opened
+[HikariPool-1 connection adder] INFO jdbc.audit - 2. Connection.new Connection returned 
+[HikariPool-1 connection adder] INFO jdbc.audit - 2. Connection.isReadOnly() returned false
+[HikariPool-1 connection adder] INFO jdbc.audit - 2. Connection.getAutoCommit() returned true
+[main] INFO org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout=&apos;30000 ms&apos;}
+[HikariPool-1 connection adder] INFO jdbc.connection - 3. Connection opened
+[HikariPool-1 connection adder] INFO jdbc.audit - 3. Connection.new Connection returned 
+[HikariPool-1 connection adder] INFO jdbc.audit - 3. Connection.isReadOnly() returned false
+[HikariPool-1 connection adder] INFO jdbc.audit - 3. Connection.getAutoCommit() returned true
+[main] INFO org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout=&apos;30000 ms&apos;}
+[cluster-rtt-ClusterId{value=&apos;66a910a45aa24113b6703ba0&apos;, description=&apos;null&apos;}-localhost:27017] INFO org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:148}] to localhost:27017
+[cluster-ClusterId{value=&apos;66a910a45aa24113b6703ba1&apos;, description=&apos;null&apos;}-127.0.0.1:27017] INFO org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:149}] to 127.0.0.1:27017
+[cluster-rtt-ClusterId{value=&apos;66a910a45aa24113b6703ba1&apos;, description=&apos;null&apos;}-127.0.0.1:27017] INFO org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:150}] to 127.0.0.1:27017
+[cluster-ClusterId{value=&apos;66a910a45aa24113b6703ba0&apos;, description=&apos;null&apos;}-localhost:27017] INFO org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:147}] to localhost:27017
+[cluster-ClusterId{value=&apos;66a910a45aa24113b6703ba1&apos;, description=&apos;null&apos;}-127.0.0.1:27017] INFO org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=54129600}
+[cluster-ClusterId{value=&apos;66a910a45aa24113b6703ba0&apos;, description=&apos;null&apos;}-localhost:27017] INFO org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=54109000}
+[HikariPool-1 connection adder] INFO jdbc.connection - 4. Connection opened
+[HikariPool-1 connection adder] INFO jdbc.audit - 4. Connection.new Connection returned 
+[HikariPool-1 connection adder] INFO jdbc.audit - 4. Connection.isReadOnly() returned false
+[HikariPool-1 connection adder] INFO jdbc.audit - 4. Connection.getAutoCommit() returned true
+[HikariPool-1 connection adder] INFO jdbc.connection - 5. Connection opened
+[HikariPool-1 connection adder] INFO jdbc.audit - 5. Connection.new Connection returned 
+[HikariPool-1 connection adder] INFO jdbc.audit - 5. Connection.isReadOnly() returned false
+[HikariPool-1 connection adder] INFO jdbc.audit - 5. Connection.getAutoCommit() returned true
+[HikariPool-1 connection adder] INFO jdbc.connection - 6. Connection opened
+[HikariPool-1 connection adder] INFO jdbc.audit - 6. Connection.new Connection returned 
+[HikariPool-1 connection adder] INFO jdbc.audit - 6. Connection.isReadOnly() returned false
+[HikariPool-1 connection adder] INFO jdbc.audit - 6. Connection.getAutoCommit() returned true
+[HikariPool-1 connection adder] INFO jdbc.connection - 7. Connection opened
+[HikariPool-1 connection adder] INFO jdbc.audit - 7. Connection.new Connection returned 
+[HikariPool-1 connection adder] INFO jdbc.audit - 7. Connection.isReadOnly() returned false
+[HikariPool-1 connection adder] INFO jdbc.audit - 7. Connection.getAutoCommit() returned true
+[HikariPool-1 connection adder] INFO jdbc.connection - 8. Connection opened
+[HikariPool-1 connection adder] INFO jdbc.audit - 8. Connection.new Connection returned 
+[HikariPool-1 connection adder] INFO jdbc.audit - 8. Connection.isReadOnly() returned false
+[HikariPool-1 connection adder] INFO jdbc.audit - 8. Connection.getAutoCommit() returned true
+[HikariPool-1 connection adder] INFO jdbc.connection - 9. Connection opened
+[HikariPool-1 connection adder] INFO jdbc.audit - 9. Connection.new Connection returned 
+[HikariPool-1 connection adder] INFO jdbc.audit - 9. Connection.isReadOnly() returned false
+[HikariPool-1 connection adder] INFO jdbc.audit - 9. Connection.getAutoCommit() returned true
+[HikariPool-1 connection adder] INFO jdbc.connection - 10. Connection opened
+[HikariPool-1 connection adder] INFO jdbc.audit - 10. Connection.new Connection returned 
+[HikariPool-1 connection adder] INFO jdbc.audit - 10. Connection.isReadOnly() returned false
+[HikariPool-1 connection adder] INFO jdbc.audit - 10. Connection.getAutoCommit() returned true
+[main] WARN org.springframework.context.support.GenericApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name &apos;messageServiceImpl&apos; defined in file [C:\mongo\Shopping_mongo\target\classes\com\vam\service\MessageServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type &apos;com.vam.repository.ChatRepository&apos; available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[main] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[HikariPool-1 connection closer] INFO jdbc.connection - 1. Connection closed
+[HikariPool-1 connection closer] INFO jdbc.audit - 1. Connection.close() returned 
+[HikariPool-1 connection closer] INFO jdbc.connection - 2. Connection closed
+[HikariPool-1 connection closer] INFO jdbc.audit - 2. Connection.close() returned 
+[HikariPool-1 connection closer] INFO jdbc.connection - 3. Connection closed
+[HikariPool-1 connection closer] INFO jdbc.audit - 3. Connection.close() returned 
+[HikariPool-1 connection closer] INFO jdbc.connection - 4. Connection closed
+[HikariPool-1 connection closer] INFO jdbc.audit - 4. Connection.close() returned 
+[HikariPool-1 connection closer] INFO jdbc.connection - 5. Connection closed
+[HikariPool-1 connection closer] INFO jdbc.audit - 5. Connection.close() returned 
+[HikariPool-1 connection closer] INFO jdbc.connection - 6. Connection closed
+[HikariPool-1 connection closer] INFO jdbc.audit - 6. Connection.close() returned 
+[HikariPool-1 connection closer] INFO jdbc.connection - 7. Connection closed
+[HikariPool-1 connection closer] INFO jdbc.audit - 7. Connection.close() returned 
+[HikariPool-1 connection closer] INFO jdbc.connection - 8. Connection closed
+[HikariPool-1 connection closer] INFO jdbc.audit - 8. Connection.close() returned 
+[HikariPool-1 connection closer] INFO jdbc.connection - 9. Connection closed
+[HikariPool-1 connection closer] INFO jdbc.audit - 9. Connection.close() returned 
+[HikariPool-1 connection closer] INFO jdbc.connection - 10. Connection closed
+[HikariPool-1 connection closer] INFO jdbc.audit - 10. Connection.close() returned 
+[main] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[main] ERROR org.springframework.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@10683d9d] to prepare test instance [com.vam.persistence.DataSourceTest@53d13cd4]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name &apos;messageServiceImpl&apos; defined in file [C:\mongo\Shopping_mongo\target\classes\com\vam\service\MessageServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type &apos;com.vam.repository.ChatRepository&apos; available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:127)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	... 31 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type &apos;com.vam.repository.ChatRepository&apos; available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1790)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 49 more
+</system-err>
+  </testcase>
+</testsuite>
