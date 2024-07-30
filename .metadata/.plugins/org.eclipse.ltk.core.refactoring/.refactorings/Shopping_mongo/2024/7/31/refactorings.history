@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.vam.mapper.ChatRepository&apos; to &apos;ChatRepositoryTests&apos;&#x0D;&#x0A;- Original project: &apos;Shopping_mongo&apos;&#x0D;&#x0A;- Original element: &apos;com.vam.mapper.ChatRepository&apos;&#x0D;&#x0A;- Renamed element: &apos;com.vam.mapper.ChatRepositoryTests&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ChatRepository&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;com.vam.mapper{ChatRepository.java[ChatRepository" matchStrategy="1" name="ChatRepositoryTests" qualified="false" references="true" similarDeclarations="false" stamp="1722321947715" textual="false" version="1.0"/>
+</session>
