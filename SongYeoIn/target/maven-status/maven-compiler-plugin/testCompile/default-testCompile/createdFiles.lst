@@ -1,0 +1,3 @@
+mapper\ChatRepositoryTests.class
+persistence\DataSourceTest.class
+persistence\JDBCTest.class
