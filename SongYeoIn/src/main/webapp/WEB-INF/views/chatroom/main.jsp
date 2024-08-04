@@ -9,9 +9,7 @@
 <style>
 /*전체 크기 늘리기  */
 .content{
-	padding:80px 0 0 0;
-	overflow: visible;
-    position: relative; /* 자식 div의 절대 위치 기준을 설정 */
+	padding:80px 0 0;
 }
 
 .total-content{
@@ -32,51 +30,19 @@
 
 }
 
-
-.add-margin{
-	margin: 16px 0px 16px;
-
+.icon-wrapper {
+     display: flex;
+     align-items: center; /* 아이콘을 중앙 정렬 */
+     height: 100%; /* 아이콘의 높이를 100%로 설정 */
+     margin-left: 5px; /* 아이콘과 입력 필드 사이의 간격 */
 }
-
-
-       .icon-wrapper {
-            display: flex;
-            align-items: center; /* 아이콘을 중앙 정렬 */
-            height: 100%; /* 아이콘의 높이를 100%로 설정 */
-            margin-left: 5px; /* 아이콘과 입력 필드 사이의 간격 */
-        }
 
 .scrollable-div{
-			width: 380px; /* 너비 설정 */
-            height: 650px; /* 높이 설정 */
-            border: 1px solid #ccc; /* 테두리 설정 */
-            overflow: auto; /* 스크롤을 자동으로 추가 */
+	 width: 380px; /* 너비 설정 */
+     height: 650px; /* 높이 설정 */
+     border: 1px solid #ccc; /* 테두리 설정 */
+     overflow: auto; /* 스크롤을 자동으로 추가 */
 }
-
-.resize-col1{
-width:100%;
-height:100%;
-}
-
-
-.resize-col2{
-width:100%;
-}
-
-.search-div{
-
-}
-
-.card-size{
-
-}
-
-/*card-body div 태그 밑으로 내리기  */
-.down-card{
-	
-
-}
-
 
 a.custom{
 	 text-decoration: none !important;
@@ -103,12 +69,12 @@ a.custom{
 <body>
 	<!-- 메뉴바 연결 -->
 	<%@ include file="../common/header.jsp"%>
-	<section class="content">
-		<div class=" total-content py-5">
+	<section class="overflow-visible position-relative content">
+		<div class=" total-content py-4">
 
 			<div class="grid-rows">
-				<div class="d-flex align-items-start justify-content-center">
-				<div class="col-xl-6 mb-4 mb-md-0">
+				<div class="d-flex align-items-start justify-content-center ">
+				<div class="col-xl-7 p-3 border --bs-light-border-subtle rounded-3">
 				
 					<select class="form-select" aria-label="Default select example">
 					  <option selected>Open this select menu</option>
@@ -117,17 +83,13 @@ a.custom{
 					  <option value="3">Three</option>
 					</select>
 					
-					<div class="d-flex align-items-center">
-					  <input type="text" class="add-margin form-control" placeholder="학생 이름을 검색해주세요." aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-						<div class="icon-wrapper">
-							<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="add-margin mh-100 w-25 bi bi-search" viewBox="0 0 16 16">
-							  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-							</svg>
-						</div>
-					</div>
+					<form class="d-flex align-items-center" role="search">
+				        <input class="form-control" type="search" placeholder="학생 이름을 검색해주세요." aria-label="Search">
+				        <button class="my-3  ms-2 btn btn-outline-dark text-nowrap" type="submit">검색</button>
+				     </form>
 					
-					<div class="card-size card">
-						<div class="down-card card-body scrollable-div">
+					<div class="card">
+						<div class="card-body w-auto scrollable-div">
 
 							<ul class="list-unstyled mb-0">
 								<li class="p-2 border-bottom bg-body-tertiary"><a href="#!"
@@ -279,7 +241,8 @@ a.custom{
 				</div>
 				</div>
 
-				<div class="resize-col2 col-md-6 col-lg-7 col-xl-8">
+				<div class="d-flex align-items-start">
+				<div class="col-md-6 col-lg-7 col-xl-8 pt-3 ps-3 pe-3 pb-4 border --bs-light-border-subtle rounded-3">
 
 					<ul class="list-unstyled">
 						<li class="d-flex justify-content-between mb-6"><img
@@ -338,17 +301,17 @@ a.custom{
 							</div></li>
 						<li class="bg-white mb-3">
 							<div data-mdb-input-init class="form-outline">
-								<textarea class="form-control bg-body-tertiary"
+								<textarea class="form-control bg-body-tertiary mb-4"
 									id="textAreaExample2" rows="4"></textarea>
-								<label class="form-label" for="textAreaExample2">Message</label>
+								<label class="form-label" for="textAreaExample2">메시지</label>
 							</div>
 						</li>
 						<button type="button" data-mdb-button-init data-mdb-ripple-init
-							class="btn btn-info btn-rounded float-end">Send</button>
+							class="btn btn-info btn-rounded float-end">보내기</button>
 					</ul>
 
 				</div>
-
+				</div>
 			</div>
 
 		</div>
