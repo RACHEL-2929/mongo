@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="com.syi.project.mapper.chat.ChatRoomMapper">
+  
+	  <resultMap type="com.syi.project.model.chat.ChatRoomVO" id="chatRoomResultMap">
+			<id property="chatRoomNo" column="CHATROOM_NO"/>
+			<result property="chatRoomMemberNo" column="CHATROOM_MEMBER_NO"/>
+			<result property="chatRoomAdminNo" column="CHATROOM_ADMIN_NO"/>
+			<association property="member" resultMap="memberResultMap"/>
+	</resultMap>
+	
+	  <resultMap type="com.syi.project.model.enroll.EnrollVO" id="enrollResultMap">
+			<id property="enrollNo" column="ENROLL_NO"/>
+			<result property="classNo" column="CLASS_NO"/>
+			<association property="member" column="memberResultMap"/>
+	</resultMap>
+	
+	<resultMap type="com.syi.project.model.member.MemberVO" id="memberResultMap">
+		<id property="memberNo" column="MEMBER_NO"/>
+		<result property="memberId" column="MEMBER_ID"/>
+		<result property="memberPwd" column="MEMBER_PWD"/>
+		<result property="memberName" column="MEMBER_NAME"/>
+		<result property="memberBirthday" column="MEMBER_BIRTHDAY"/>
+		<result property="memberGender" column="MEMBER_GENDER"/>
+		<result property="memberPhone" column="MEMBER_PHONE"/>
+		<result property="memberEmail" column="MEMBER_EMAIL"/>
+		<result property="memberAddress" column="MEMBER_ADDRESS"/>
+		<result property="memberStreetAddress" column="MEMBER_STREET_ADDRESS"/>
+		<result property="memberDetailAddress" column="MEMBER_DETAIL_ADDRESS"/>
+		<result property="memberNickname" column="MEMBER_NICKNAME"/>
+		<result property="memberEnrollDate" column="MEMBER_ENROLL_DATE"/>
+		<result property="memberCheckStatus" column="MEMBER_CHECK_STATUS"/>
+		<result property="memberStatus" column="MEMBER_STATUS"/>
+		<result property="memberSubType" column="MEMBER_SUB_TYPE"/>
+		<result property="memberRole" column="MEMBER_ROLE"/>
+	</resultMap>
+	
+  
+  
+  	<!--수강테이블 조회  -->
+  	<select id="selectEnrollListByMemberNo" resultMap="enrollResultMap">
+  		SELECT *
+  		FROM ENROLL
+  		WHERE MEMBER_NO = #{chatRoomMemberNo}
+  	</select>
+  
+  	<!--채팅방 존재 확인  -->
+  	<select id="selectCountByMemberNoAndAdminNo" resultType="_int">
+  		SELECT COUNT(*)
+  		FROM CHATROOM
+  		WHERE CHATROOM_MEMBER_NO = #{chatRoomMemberNo} AND CHATROOM_ADMIN_NO = #{chatRoomAdminNo}
+  	</select>
+  
+  	<!--채팅방 개설  -->
+  	<insert id="insertChatRoom" parameterType="com.syi.project.model.chat.ChatRoomVO">
+  		INSERT INTO CHATROOM(
+  			CHATROOM_MEMBER_NO,
+  			CHATROOM_ADMIN_NO
+  		)
+  		VALUES(
+  			#{chatRoomMemberNo},
+  			#{chatRoomAdminNo}
+  		)
+  	</insert>
+  	
+  	
+  	<!-- <select id="selectChatRoomList" resultType="com.syi.project.model.chat.ChatRoomVO">
+  		SELECT *
+  		FORM CHATROOM
+  		WHERE CHATROOM_MEMBER_NO = #{chatRoomMemberNo}
+  	</select> -->
+  	
+  	
+  
+  
+  </mapper>
