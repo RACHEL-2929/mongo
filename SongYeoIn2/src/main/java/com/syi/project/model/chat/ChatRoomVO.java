@@ -1,5 +1,6 @@
 package com.syi.project.model.chat;
 
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
@@ -17,6 +18,8 @@ public class ChatRoomVO {
 	private String chatRoomNo;
 	
 	private String chatRoomName;
+	
+	private HashMap<String, String> userList = new HashMap<String, String>();
 	
 	public ChatRoomVO create(String chatRoomName) {
 		ChatRoomVO chatRoom = new ChatRoomVO();

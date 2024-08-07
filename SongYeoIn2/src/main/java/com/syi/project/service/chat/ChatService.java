@@ -1,5 +1,6 @@
 package com.syi.project.service.chat;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.web.socket.WebSocketSession;
@@ -24,6 +25,14 @@ public interface ChatService {
 	ChatRoomVO findChatRoomByNo(String chatRoomNo);
 
 	ChatRoomVO createChatRoom(String chatRoomName);
+
+	String addUser(String chatRoomNo, String sender);
+	
+	String getUserName(String chatRoomNo, String userUUID);
+	
+	ArrayList<String> getUserList(String chatRoomNo);
+
+	//void plusUserCnt(String chatRoomNo);
 
 	//<T> void sendMessage(WebSocketSession session, T message);
 

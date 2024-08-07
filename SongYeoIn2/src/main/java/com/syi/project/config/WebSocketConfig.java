@@ -33,10 +33,10 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer{
 	@Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry.addEndpoint("/chat")
-                //sockJs 클라이언트가 websocket handshake로 커넥션할 경로
-                .setAllowedOrigins("http://localhost:8080")
+                //클라이언트가 websocket handshake로 커넥션할 경로
+                .setAllowedOrigins("*");//http://localhost:8080
                 //가능한 경로 설정 ( 전체 오픈 : 기호에따라 수정 )
-                .withSockJS();
+                //.withSockJS();
     }
     @Override
     public void configureMessageBroker(MessageBrokerRegistry config) {

@@ -58,10 +58,41 @@ public class ChatServiceImpl implements ChatService {
     	chatRoomMap.put(chatRoom.getChatRoomNo(), chatRoom);
     	
     	return chatRoom;
-    	
-    	
-    	
     }
+
+    //채팅방에 유저 리스트에 유저 추가
+	@Override
+	public String addUser(String chatRoomNo, String userName) {
+		ChatRoomVO chatRoom = chatRoomMap.get(chatRoomNo);
+		String userUUID = UUID.randomUUID().toString();
+		
+		chatRoom.getUserList().put(userUUID,userName);
+		return userUUID;
+	}
+	
+	//채팅방 userName 조회
+	@Override
+	public String getUserName(String chatRoomNo, String userUUID) {
+		ChatRoomVO chatRoom = chatRoomMap.get(chatRoomNo);
+		return chatRoom.getUserList().get(userUUID);
+	}
+	
+	//채팅방 전체 userList 조회
+	@Override
+	public ArrayList<String> getUserList(String chatRoomNo){
+		ArrayList<String> list = new ArrayList<String>();
+		ChatRoomVO chatRoom = chatRoomMap.get(chatRoomNo);
+		
+		chatRoom.getUserList().forEach((key,value)-> list.add(value));
+		return list;
+	}
+	
+	
+
+	/*
+	 * @Override public void plusUserCnt(String chatRoomNo) { ChatRoomVO chatRoom =
+	 * chatRoomMap.get(chatRoomNo); chatRoom.set }
+	 */
     
     /*
      * //랜덤 아이디로 채팅방 번호 설정하기 String randomChatRoomNo = UUID.randomUUID().toString();

@@ -1,10 +1,13 @@
 package com.syi.project.controller.chat;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.syi.project.model.chat.ChatRoomVO;
@@ -26,7 +29,6 @@ public class ChatController {
 	private final ChatService chatService;
 
 	// 채팅 리스트 화면
-
 	@GetMapping("/")
 	public ResponseEntity<ResultResponse<List<ChatRoomVO>>> goChatRoom(){ 
 		List<ChatRoomVO> chatRooms = chatService.findAllChatRoom();
@@ -37,6 +39,24 @@ public class ChatController {
 	  return ResponseEntity.ok(response); 
 	  
 	}
+	
+	@PostMapping("/room")
+	public ResponseEntity<ResultResponse<String>> createRoom(@RequestParam String name){
+		ChatRoomVO room = chatService.createChatRoom(name);
+		ResultResponse<String> response = ResultResponse.of( true, // 성공 여부
+				  "Chat rooms fetched successfully", // 메시지 
+				  room.getChatRoomNo() // 데이터 
+				  ); 
+		  return ResponseEntity.ok(response);  
+	}
+	
+	@GetMapping("userlist")
+	public ArrayList<String> userList(String chatRoomNO){
+		return chatService.getUserList(chatRoomNO);
+	}
+	
+	
+	
 
 	/*
 	 * @PostMapping public ChatRoomVO createChatRoom(@RequestBody String
