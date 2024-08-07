@@ -22,11 +22,11 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-@RequiredArgsConstructor
+//@RequiredArgsConstructor
 @Service
 public class ChatServiceImpl implements ChatService {
 
-	private final ObjectMapper objectMapper;
+	//private final ObjectMapper objectMapper;
     private Map<String,ChatRoomVO> chatRoomMap = new LinkedHashMap<String, ChatRoomVO>();
     
 	/*
