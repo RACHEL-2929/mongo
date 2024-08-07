@@ -13,37 +13,31 @@ import com.syi.project.service.chat.ChatService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
-@RestController	//@Controller와 @ResponseBody의 조합, 컨트롤러 클래스가 JSON이나 XML 형태로 응답을 반환하도록 한다, RESTful 웹 서비스를 쉽게 구현
+@RestController // @Controller와 @ResponseBody의 조합, 컨트롤러 클래스가 JSON이나 XML 형태로 응답을 반환하도록 한다,
+				// RESTful 웹 서비스를 쉽게 구현
 @Slf4j
 @RequiredArgsConstructor
 @RequestMapping("/chatroom")
 public class ChatController {
 
-	//private static final Logger logger = LoggerFactory.getLogger(ChatController.class);
+	// private static final Logger logger =
+	// LoggerFactory.getLogger(ChatController.class);
 
 	private final ChatService chatService;
-	
-	//채팅 리스트 화면
+
+	// 채팅 리스트 화면
+
 	@GetMapping("/")
-	public ResponseEntity<ResultResponse<ChatRoomVO>> goChatRoom(){
+	public ResponseEntity<ResultResponse<List<ChatRoomVO>>> goChatRoom(){ 
 		List<ChatRoomVO> chatRooms = chatService.findAllChatRoom();
-		ResultResponse<List<ChatRoomVO>> response = ResultResponse.of(
-	            true, // 성공 여부
-	            "Chat rooms fetched successfully", // 메시지
-	            chatRooms // 데이터
-	        );
-	        return ResponseEntity.ok(response);
+	  ResultResponse<List<ChatRoomVO>> response = ResultResponse.of( true, // 성공 여부
+			  "Chat rooms fetched successfully", // 메시지 
+			  chatRooms // 데이터 
+			  ); 
+	  return ResponseEntity.ok(response); 
+	  
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	/*
 	 * @PostMapping public ChatRoomVO createChatRoom(@RequestBody String
 	 * chatRoomName) { return chatService.createChatRoom(chatRoomName); }

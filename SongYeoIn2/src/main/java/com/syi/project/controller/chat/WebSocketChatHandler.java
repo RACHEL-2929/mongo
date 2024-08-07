@@ -22,18 +22,22 @@ public class WebSocketChatHandler extends TextWebSocketHandler {
 	// TextWebSocketHandler, BinaryWebSocketHandler
 	// 채팅이므로 텍스트 방식 상속 받기
 
-	private final ObjectMapper objectMapper;
-	private final ChatService chatService;
+	/*
+	 * private final ObjectMapper objectMapper; private final ChatService
+	 * chatService;
+	 */
 	
 	@Override
 	protected void handleTextMessage(WebSocketSession session, TextMessage message) throws Exception {
 		String payload = message.getPayload();
 		log.info("payload {}",payload);
 		
-		//JSON 형태를 messageDTO 형식에 맞게 매핑시켜서 저장해준다.
-		MessageDTO messageDTO = objectMapper.readValue(payload, MessageDTO.class);
-		ChatRoomVO chatRoom = chatService.findChatRoomById(messageDTO.getChatRoomNo());
-		chatRoom.handleActions(session, messageDTO, chatService);
+		/*
+		 * //JSON 형태를 messageDTO 형식에 맞게 매핑시켜서 저장해준다. MessageDTO messageDTO =
+		 * objectMapper.readValue(payload, MessageDTO.class); ChatRoomVO chatRoom =
+		 * chatService.findChatRoomByNo(messageDTO.getChatRoomNo());
+		 * chatRoom.handleActions(session, messageDTO, chatService);
+		 */
 	}
 
 }
