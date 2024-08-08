@@ -3,7 +3,11 @@ package com.syi.project.controller.chat;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
 import org.springframework.http.ResponseEntity;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.syi.project.model.chat.ChatRoomVO;
+import com.syi.project.model.member.MemberVO;
 import com.syi.project.service.chat.ChatService;
 
 import lombok.RequiredArgsConstructor;
@@ -26,6 +31,9 @@ public class ChatRoomController {
 	// LoggerFactory.getLogger(ChatController.class);
 
 	private final ChatService chatService;
+	
+	
+	
 
 	// 채팅 리스트 화면
 	@GetMapping("/")
@@ -51,7 +59,7 @@ public class ChatRoomController {
 	}
 	
 	//채팅에 참여한 유저 리스트 반환
-	@GetMapping("userlist")
+	@GetMapping("/userlist")
 	public ArrayList<String> userList(String chatRoomNO){
 		return chatService.getUserList(chatRoomNO);
 	}

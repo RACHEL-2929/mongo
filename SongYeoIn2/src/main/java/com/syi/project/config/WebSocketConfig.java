@@ -26,17 +26,14 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer{
 	 * STOMP 방식을 적용하려고 함
 	 * 클라이언트가 특정 주소를 구독할 수 있고, 메시지를 보내면 메시지 브로커가 해당 주소를 구독하는 모든 클라이언트들에게 
 	 * 메시지를 보여주는 방식
-	 * 
-	 * 
-	 * 
 	 * */
 	@Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry.addEndpoint("/chat")
-                //클라이언트가 websocket handshake로 커넥션할 경로
-                .setAllowedOrigins("*");//http://localhost:8080
+                //클라이언트가 websocket handshake로 커넥localhost:8080션할 경로
+                .setAllowedOrigins("*")//http://
                 //가능한 경로 설정 ( 전체 오픈 : 기호에따라 수정 )
-                //.withSockJS();
+                .withSockJS();
     }
     @Override
     public void configureMessageBroker(MessageBrokerRegistry config) {
@@ -58,8 +55,6 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer{
 	 * @Override public void registerStompEndpoints(StompEndpointRegistry registry)
 	 * { registry.addEndpoint("/ws") .setAllowedOriginPatterns("*"); }
 	 */
-	
-
 	
 
 }

@@ -13,39 +13,44 @@ import com.syi.project.service.chat.MessageService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
-
 @Slf4j
 @RequiredArgsConstructor
 @RestController
 public class MessageController {
-	
-	
+
 	private final SimpMessageSendingOperations template;
 	private final ChatService chatService;
-	
-	@MessageMapping("/enterUser")
-	public void enterUser(@Payload MessageDTO message,SimpMessageHeaderAccessor headerAccessor) {
-		//chatService.plusUserCnt(message.getChatRoomNo());
+
+	//@MessageMapping("/enterUser")
+	public void enterUser(MessageDTO message, SimpMessageHeaderAccessor headerAccessor) {
+		// chatService.plusUserCnt(message.getChatRoomNo());
 		String userUUID = chatService.addUser(message.getChatRoomNo(), message.getSender());
-		
+		log.info(userUUID);
+
 		headerAccessor.getSessionAttributes().put("userUUID", userUUID);
 		headerAccessor.getSessionAttributes().put("chatRoomNo", message.getChatRoomNo());
-		
+
 		message.setMessage(message.getSender() + " 님 입장");
 		template.convertAndSend("/sub/chat/room/" + message.getChatRoomNo(), message);
-		
+
 	}
-	
-	@MessageMapping("/sendMessage")
-	public void sendMessage(@Payload MessageDTO message) {
+
+	//@MessageMapping("/sendMessage")
+	public void sendMessage(MessageDTO message) {
 		log.info("CHAT {}", message);
 		message.setMessage(message.getMessage());
-		template.convertAndSend("/sub/chat/room/" + message.getChatRoomNo(),message);
+		template.convertAndSend("/sub/chat/room/" + message.getChatRoomNo(), message);
 	}
 	
-	
-	
-	
+	@MessageMapping("/chat/message")
+    public void handleMessage(MessageDTO message) {
+        // 로그에 메시지 내용 기록
+        System.out.println("Received message: " + message);
+
+        // /sub/chat/room/{chatRoomNo} 경로로 메시지 전송
+        template.convertAndSend("/sub/chat/room/" + message.getChatRoomNo(), message);
+    }
+
 	/*
 	 * 
 	 * 

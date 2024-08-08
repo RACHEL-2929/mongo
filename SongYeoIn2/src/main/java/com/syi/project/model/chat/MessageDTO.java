@@ -9,7 +9,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Document(collection = "messages")
+//@Document(collection = "messages")
 @Data
 @Builder
 @AllArgsConstructor
@@ -20,17 +20,17 @@ public class MessageDTO {
 		ENTER, TALK, LEAVE;
 	}
 	
-	@Field(name="type")
+	//@Field(name="type")
 	private MessageType type;
 	
 	private String chatRoomNo;
 	
 	private String sender;//메시지 보낸 사람
 	
-	@Field(name = "message")	//content
+	//@Field(name = "message")	//content
 	private String message;
 	
-	@Field(name="timestamp")
+	//@Field(name="timestamp")
 	private String time; //채팅 발송 시간
 	
 	
