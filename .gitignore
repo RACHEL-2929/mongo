@@ -4,7 +4,7 @@ Servers
 .DS_Store
 target/
 
-### Maven ###
+### Maven    ###
 target/
 pom.xml.tag
 pom.xml.releaseBackup
